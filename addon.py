@@ -15,6 +15,11 @@ url8 = "http://feeds.feedburner.com/LiveandLetLiveRadio
 def main_menu():
     items = [
         {
+            'label': plugin.get_string(30000),
+            'path': "http://mp3.logosradionetwork.com/listen.asx",
+            'thumbnail': "http://mp3.logosradionetwork.com/listen.asx", 
+            'is_playable': True},
+        {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('episodes1'),
             'thumbnail': "http://www.ruleoflawradio.com/images/TE/Cody_Hess300.jpg"},
